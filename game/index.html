@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THE MERIDIAN JOB — a three-room museum heist</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #070a14;
+    color: #e8ecf5;
+    font-family: sans-serif;
+  }
+  #wrap {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  canvas {
+    display: block;
+    width: 1280px;
+    height: 800px;
+    background: #16233d;
+    border: none;
+  }
+  /* Status and test lines stay in the DOM (for dump-dom checks) but
+     are not part of the visible frame — the HUD carries the same info. */
+  #status, #test-result {
+    display: none;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="800"></canvas>
+  <div id="status">THE MERIDIAN JOB</div>
+  <div id="test-result"></div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
